@@ -10,6 +10,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    //var thekr = ["سبحان الله","الحمد لله","استغفر الله"]
+    @State var thekr = "اضغط هنا"
+    var body: some View {
+        ZStack {
+            RamadanBG()
+            Text(thekr)
+                .font(.largeTitle)
+                .foregroundColor(.white)
+                .multilineTextAlignment(.center)
+                .padding()
+                .onTapGesture {
+                    self.thekr = athkar.randomElement()!
+            }
+        }
+    }
+}
+
+
+
+struct RamadanBG: View {
     var body: some View {
         ZStack {
             Image("BACKGROUND")
@@ -30,6 +50,15 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+//           RamadanBG()
+//              .previewDevice(PreviewDevice(rawValue: "iPhone SE"))
+//              .previewDisplayName("iPhone SE")
+
+           ContentView()
+              .previewDevice(PreviewDevice(rawValue: "iPhone 11 Pro Max"))
+              .previewDisplayName("iPhone 11 Pro Max")
+        }
+       
     }
 }
