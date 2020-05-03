@@ -10,7 +10,7 @@ import SwiftUI
 import UIKit
 
 struct HWPrayerTimes: View {
-    var color = Color.blue
+    @State var color = Color.blue
     var body: some View {
         
         ZStack{
@@ -33,9 +33,9 @@ struct HWPrayerTimes: View {
                     Text(">")
                 }.background(Color(.white).opacity(0.5) )
                     .foregroundColor(.white)
-                    .font(.system(size: 20))
+                    .font(.system(size: 20, weight: .bold, design: .default))
                 
-                VStack{
+                VStack(spacing: 20) {
                     HStack {
                         
                         Text("3:44 am")
@@ -84,10 +84,10 @@ struct HWPrayerTimes: View {
                         .foregroundColor(.white)
                     }
                     
-                }.padding(50)
+                }.padding(5)
                 .background(Color(.white).opacity(0.5) )
                 .foregroundColor(.white)
-                .font(.system(size: 20))
+                .font(.system(size: 20, weight: .bold, design: .default))
                     //.background(Color(.darkGray))
             }
         }

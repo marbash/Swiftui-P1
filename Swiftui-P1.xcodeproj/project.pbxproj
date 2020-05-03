@@ -18,6 +18,7 @@
 		09099DD6245DE7A30060D8BD /* ClassWork3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09099DD5245DE7A30060D8BD /* ClassWork3.swift */; };
 		09099DD8245EED7B0060D8BD /* HWCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09099DD7245EED7B0060D8BD /* HWCalc.swift */; };
 		09099DDA245F3F8E0060D8BD /* HWPrayerTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09099DD9245F3F8E0060D8BD /* HWPrayerTimes.swift */; };
+		09099DDC245F59B90060D8BD /* HWWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09099DDB245F59B90060D8BD /* HWWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		09099DD5245DE7A30060D8BD /* ClassWork3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassWork3.swift; sourceTree = "<group>"; };
 		09099DD7245EED7B0060D8BD /* HWCalc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWCalc.swift; sourceTree = "<group>"; };
 		09099DD9245F3F8E0060D8BD /* HWPrayerTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWPrayerTimes.swift; sourceTree = "<group>"; };
+		09099DDB245F59B90060D8BD /* HWWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				09099DD5245DE7A30060D8BD /* ClassWork3.swift */,
 				09099DD7245EED7B0060D8BD /* HWCalc.swift */,
 				09099DD9245F3F8E0060D8BD /* HWPrayerTimes.swift */,
+				09099DDB245F59B90060D8BD /* HWWeather.swift */,
 				09099DC3245C97B40060D8BD /* Assets.xcassets */,
 				09099DC8245C97B40060D8BD /* LaunchScreen.storyboard */,
 				09099DCB245C97B40060D8BD /* Info.plist */,
@@ -165,6 +168,7 @@
 				09099DD8245EED7B0060D8BD /* HWCalc.swift in Sources */,
 				09099DDA245F3F8E0060D8BD /* HWPrayerTimes.swift in Sources */,
 				09099DBE245C97B00060D8BD /* AppDelegate.swift in Sources */,
+				09099DDC245F59B90060D8BD /* HWWeather.swift in Sources */,
 				09099DC0245C97B00060D8BD /* SceneDelegate.swift in Sources */,
 				09099DD6245DE7A30060D8BD /* ClassWork3.swift in Sources */,
 				09099DD2245CBCCD0060D8BD /* dataset.swift in Sources */,
