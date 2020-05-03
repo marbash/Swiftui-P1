@@ -1,0 +1,100 @@
+//
+//  HWPrayerTimes.swift
+//  Swiftui-P1
+//
+//  Created by MOHD ALARBASH on 5/3/20.
+//  Copyright © 2020 MOHD ALARBASH. All rights reserved.
+//
+
+import SwiftUI
+import UIKit
+
+struct HWPrayerTimes: View {
+    var color = Color.blue
+    var body: some View {
+        
+        ZStack{
+            color
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack (alignment: .center, spacing: 15) {
+                Text("02:10")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                Text("مضى على الااذان")
+                    .foregroundColor(.white)
+                
+                HStack() {
+                    Text("<")
+                    Spacer()
+                    Text("25 ابريل - 5 رمضان")
+                        .foregroundColor(.white)
+                    Spacer()
+                    Text(">")
+                }.background(Color(.white).opacity(0.5) )
+                    .foregroundColor(.white)
+                    .font(.system(size: 20))
+                
+                VStack{
+                    HStack {
+                        
+                        Text("3:44 am")
+                        .foregroundColor(.white)
+                        Spacer()
+                        Text("الفجر")
+                        .foregroundColor(.white)
+                            .onTapGesture {
+                                self.color = Color.red
+                        }
+                    }
+                    HStack {
+                        Text("3:44 am")
+                        .foregroundColor(.white)
+                        Spacer()
+                        Text("الشروق")
+                        .foregroundColor(.white)
+                    }
+                    HStack {
+                        Text("3:44 am")
+                        .foregroundColor(.white)
+                        Spacer()
+                        Text("الظهر")
+                        .foregroundColor(.white)
+                    }
+                    HStack {
+                        Text("3:44 am")
+                        .foregroundColor(.white)
+                        Spacer()
+                        Text("العصر")
+                        .foregroundColor(.white)
+                    }
+                    HStack {
+                        Text("3:44 am")
+                        .foregroundColor(.white)
+                        Spacer()
+                        Text("المغرب")
+                        .foregroundColor(.white)
+                    }
+                    HStack {
+                        Text("3:44 am")
+                        .foregroundColor(.white)
+                        Spacer()
+                        Text("العشاء")
+                        .foregroundColor(.white)
+                    }
+                    
+                }.padding(50)
+                .background(Color(.white).opacity(0.5) )
+                .foregroundColor(.white)
+                .font(.system(size: 20))
+                    //.background(Color(.darkGray))
+            }
+        }
+    }
+}
+
+struct HWPrayerTimes_Previews: PreviewProvider {
+    static var previews: some View {
+        HWPrayerTimes()
+    }
+}
