@@ -44,6 +44,7 @@ struct HWPrayerTimes: View {
                         Text("الفجر")
                         .foregroundColor(.white)
                             .onTapGesture {
+                                // Here is my problem
                                 self.color = Color.red
                         }
                     }
