@@ -20,8 +20,9 @@ struct HWPrayerTimes: View {
             VStack (alignment: .center, spacing: 15) {
                
                 Text("02:10")
-                    .font(.largeTitle)
+                    //.font(.largeTitle)
                     .foregroundColor(.white)
+                    .font(.system(size: 50, weight: .bold, design: .default))
                 Text("مضى على الااذان")
                     .foregroundColor(.white)
                 
@@ -32,11 +33,12 @@ struct HWPrayerTimes: View {
                         .foregroundColor(.white)
                     Spacer()
                     Text(">")
-                }.background(Color(.white).opacity(0.5) )
+                }.padding()
+                    .background(Color(.white).opacity(0.5) )
                     .foregroundColor(.white)
                     .font(.system(size: 20, weight: .bold, design: .default))
                
-                VStack(spacing: 20) {
+                VStack (spacing: 20){
                     HStack {
                         
                         Text("3:44 am")
@@ -48,42 +50,47 @@ struct HWPrayerTimes: View {
                                 // Here is my problem
                                 self.color = Color.red
                         }
-                    }
+                    }.padding()
+                   
                     HStack {
                         Text("3:44 am")
                         .foregroundColor(.white)
                         Spacer()
                         Text("الشروق")
                         .foregroundColor(.white)
-                    }
+                    }.padding()
+                    
                     HStack {
                         Text("3:44 am")
                         .foregroundColor(.white)
                         Spacer()
                         Text("الظهر")
                         .foregroundColor(.white)
-                    }
+                    }.padding()
+                     
                     HStack {
                         Text("3:44 am")
                         .foregroundColor(.white)
                         Spacer()
                         Text("العصر")
                         .foregroundColor(.white)
-                    }
+                    }.padding()
+                     
                     HStack {
                         Text("3:44 am")
                         .foregroundColor(.white)
                         Spacer()
                         Text("المغرب")
                         .foregroundColor(.white)
-                    }
-                    HStack {
+                    }.padding()
+                   
+                    HStack (){
                         Text("3:44 am")
                         .foregroundColor(.white)
                         Spacer()
                         Text("العشاء")
                         .foregroundColor(.white)
-                    }
+                    }.padding()
                     
                 }.padding(5)
                 .background(Color(.white).opacity(0.5) )
