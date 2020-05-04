@@ -14,7 +14,15 @@ struct HWWeather: View {
             
             Image("Night").resizable()
                 .edgesIgnoringSafeArea(.all)
+            
             VStack{
+                Spacer()
+                Text("Mishrif").foregroundColor(.white)
+                Spacer()
+                Text("Mostly Clear").foregroundColor(.white)
+                Spacer()
+                Text("22").foregroundColor(.white)
+                Spacer()
                 HStack{
                     Text("Tuesday").foregroundColor(.white)
                     Text("Today").foregroundColor(.white)
