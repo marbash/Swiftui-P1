@@ -18,7 +18,7 @@ struct HWPrayerTimes: View {
                 .edgesIgnoringSafeArea(.all)
             
             VStack (alignment: .center, spacing: 15) {
-               
+               Spacer()
                 Text("02:10")
                     //.font(.largeTitle)
                     .foregroundColor(.white)
@@ -38,7 +38,7 @@ struct HWPrayerTimes: View {
                     .foregroundColor(.white)
                     .font(.system(size: 20, weight: .bold, design: .default))
                
-                VStack (spacing: 20){
+                VStack (alignment:.leading ,spacing: 20){
                     HStack {
                         
                         Text("3:44 am")
@@ -92,7 +92,8 @@ struct HWPrayerTimes: View {
                         .foregroundColor(.white)
                     }.padding()
                     
-                }.padding(5)
+                    }.padding()
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight:0, alignment: Alignment.topLeading)
                 .background(Color(.white).opacity(0.5) )
                 .foregroundColor(.white)
                 .font(.system(size: 20, weight: .bold, design: .default))
